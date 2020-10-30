@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Runtime.InteropServices;
 
 namespace maior2ums
 {
@@ -24,8 +23,12 @@ namespace maior2ums
             {             
                 maior = comun;
             }
-            
-            Console.WriteLine($"The largest number is: {maior}");
+             
+            Console.Clear();
+            Console.WriteLine($" = The largest number is = ");
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.WriteLine($"{maior}");
+            Console.ResetColor();
             
         }
     }

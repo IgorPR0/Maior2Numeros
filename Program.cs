@@ -1,4 +1,5 @@
 ﻿using System;
+using Figgle;
 
 namespace maior2ums
 {
@@ -8,7 +9,7 @@ namespace maior2ums
         {
             double comun,maior = 0;
         
-            Console.Write("First number: ");
+            Console.Write("Primeiro numero: ");
             comun = Convert.ToDouble(Console.ReadLine());
 
             if (comun > maior)
@@ -16,7 +17,7 @@ namespace maior2ums
                 maior = comun;
             }
 
-            Console.Write("Second number: ");
+            Console.Write("Segundo numero: ");
             comun = Convert.ToDouble(Console.ReadLine());
 
             if (comun > maior)
@@ -25,10 +26,13 @@ namespace maior2ums
             }
              
             Console.Clear();
-            Console.WriteLine($" = The largest number is = ");
             Console.ForegroundColor = ConsoleColor.DarkGreen;
-            Console.WriteLine($"{maior}");
+            Console.WriteLine(FiggleFonts.Banner3.Render($"{maior}"));
             Console.ResetColor();
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.WriteLine("|Numero maior|");
+            Console.ResetColor();
+            
             
         }
     }

@@ -1,7 +1,7 @@
 ﻿using System;
 using Figgle;
 
-namespace maior2ums
+namespace Maior2Numeros
 {
     class Program
     {
